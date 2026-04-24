@@ -5,4 +5,14 @@ def SumDigit (n):
     else:
         return n % 10 + SumDigit(n//10)
 n = int (input("nhập một số nguyên dương: "))    
-print("Tổng các chữ số của",n,"là:", SumDigit(n))
+print("Tổng các chữ số của",n,"là:", SumDigit(n)) 
+
+#cau 2
+def gt(n):
+    if n == 0:
+        return 1
+    else:
+        return n *gt(n-1)
+n = int (input("nhập một số nguyên dương:"))
+print("Giai thừa của",n,"là:",gt(n))
+    
