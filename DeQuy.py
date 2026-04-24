@@ -33,3 +33,10 @@ def gcd(a,b):
 a = int(input("Nhập số nguyên dương thứ nhất:"))
 b = int(input("Nhâp số nguyên dương thứ hai"))
 print("Ước chung lớn nhất của",a ,"và",b,"là:", gcd(a,b))        
+#cau 5
+def fibonacci(n):
+    if n <=1:
+        return n
+    return fibonacci(n-1)+fibonacci(n-2)
+n = int(input("nhập số nguyên dương:"))
+print("số fibonacci thứ",n,"là:",fibonacci(n))
